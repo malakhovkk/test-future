@@ -1,0 +1,504 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@531&display=swap');
+
+body
+{
+    background-color: #EDF0F5;
+    margin: 0;
+    
+    font-family: Jost;
+    min-width: 1540px;
+}
+.side_bar
+{
+    float:left;
+    background-color: #FFFFFF;
+    width: 210px;
+    height: 100vh;
+}
+.side_bar__logo 
+{
+    width:100%;
+    padding-bottom: 30px;
+    border-bottom:1px solid rgba(0, 0, 0, 0.1);
+}
+.side_bar__logo__img
+{
+    margin-left: 45px;
+    margin-top: 30px;
+    position: relative;
+}
+.side_bar__logo__img::after
+{
+    content:'';
+    position: absolute;
+    background: url('/img/left.png');
+    top:0;
+    right:11px;
+    width: 14px;
+    height:14px;
+}
+.menu
+{
+    margin-top: 40px;
+    padding: 0;
+    list-style-type: none;
+}
+.menu__item
+{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+    position: relative;
+    padding-left: 56px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    cursor: pointer;
+} 
+.active
+{
+    background: #EDF0F5;
+    opacity: 0.6;
+    border-left:  6px solid #2E71F3;
+    border-radius: 6px;
+    padding-left: 52px;
+    color:#000000;
+}
+.exercises
+{
+ /*   position: relative;*/
+}
+.exercises::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/exersises.png');
+}
+
+.students::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:14px;
+    height:14px;
+    background: url('/img/students.png');
+}
+
+.coaches::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/coaches.png');
+}
+
+.finance::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/finance.png');    
+}
+
+.abonements::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/coaches.png');
+}
+
+.crm::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/crm.png');
+}
+
+.email::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/email.png');
+}
+
+.chart::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:16px;
+    height:16px;
+    background: url('/img/chart.png');
+}
+
+.settings::before
+{
+    content:'';
+    position: absolute;
+    left:12px;
+    top:12px;
+    width:14px;
+    height:14px;
+    background: url('/img/settings.png');
+}
+.active::before
+{
+    left:6px;
+}
+.find
+{
+    width: 500px;
+    height: 43px;
+    background: #FFFFFF;
+    border-radius: 67px;
+    border: none;
+    outline: none;
+    padding-left:36px;
+}
+.find_logo
+{
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    width:14px;
+    height:14px;
+    background: url('/img/find.png');
+}
+.search
+{
+    position: relative;
+}
+.wrapper
+{
+    float:left;
+    padding: 30px;
+}
+.notification
+{
+    height: 43px;
+    padding-right: 15px;
+    border-right:  rgba(0, 0, 0, 0.1) solid 1px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+
+.top
+{
+    width:1170px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.avatar img
+{
+    width: 43px;
+    height: 43px;
+    border-radius: 33px;
+    cursor: pointer;
+}
+.right
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.left 
+{
+    display: flex;
+}
+.name 
+{
+    font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 17px;
+margin-left: 15px;
+margin-right: 10px;
+}
+.notification::after 
+{
+    position: absolute;
+    content:'';
+    background: #2E71F3;
+    width: 6px;
+    height: 6px;
+    border-radius: 6px;
+    border: 1.5px solid #EDF0F5;
+    right:12px;
+    top:10px;
+}
+.pick
+{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 15px;
+
+
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    color: rgba(0, 0, 0, 0.5);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.active_date
+{
+    background: #FFFFFF;
+    border-radius: 4px;
+    color: #000000;
+}
+.date 
+{
+    margin-top: 30px;
+}
+.add 
+{
+    color: white;
+    background: #52AD5B;
+    border-radius: 30px;
+    padding-left: 41px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.add::before 
+{
+    content:'';
+    position: absolute;
+    background:url('/img/plus.png');
+    top:18px;
+    left:18px;
+    width: 15px;
+    height: 15px;
+}
+
+.filter 
+{
+    color: black;
+    background: white;
+    border-radius: 30px;
+    padding-left: 41px;
+    padding-right: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: relative;
+    cursor: pointer;
+    margin-right: 10px;
+}
+.filter::before 
+{
+    content:'';
+    position: absolute;
+    background:url('/img/filter.png');
+    top:18px;
+    left:18px;
+    width: 15px;
+    height: 15px;
+}
+
+.choose_style 
+{
+    width: 150px;
+    height: 50px;
+
+    background: #FFFFFF;
+    border-radius: 33px;
+    display: flex;
+    flex-direction: row;
+}
+
+.style1 
+{
+    margin-right: 30px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.book 
+{
+    background: #2E71F3;
+box-shadow: 0px 0px 20px rgba(33, 45, 65, 0.1);
+border-radius: 33px;
+transform: matrix(-1, 0, 0, 1, 0, 0);
+width: 48px;
+height: 48px;
+}
+.book img
+{
+    padding-left: 16px;
+}
+.style1:last-child
+{
+    margin-right:0;
+}
+.style1:first-child
+{
+    margin-left: 14px;
+}
+.schedule
+{
+    width: 1250px;
+    height: 924px;
+    background: #fff;
+    margin-top: 20px;
+}
+.schedule__column_first
+{
+    width: 71px;
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    font-family: Jost;
+font-style: normal;
+font-weight: normal;
+font-size: 12px;
+line-height: 17px;
+
+color: rgba(0, 0, 0, 0.5);
+}
+.schedule__column_first:first-child
+{
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+.schedule__item_first
+{
+    height: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.schedule__table
+{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.schedule__item:first-child
+{
+    height: 64px;
+    text-align:  center;
+    padding-top: 5px;
+    box-sizing: border-box;
+}
+
+.schedule__item
+{
+    height: 32px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    width: 170px;
+}
+.schedule__item:first-child
+{
+    border-left:none;
+}
+.day
+{
+    color: rgba(0, 0, 0, 0.5);
+
+}
+.schedule__column 
+{
+    position: relative;
+}
+.schedule__content_back
+{
+    position: absolute;
+    width: 171px;
+    height: 805px;
+    background: rgb(223,27,125,0.1);
+    /* opacity: 0.1; */
+    border-radius: 3px;
+    top: 64px;
+    left: 0;
+    border-left: 4px solid #DF1B7D;
+    box-sizing: border-box;
+}
+.schedule__content_back::after
+{
+    /*border-left: 1px solid #DF1B7D;*/
+}
+.schedule__content 
+{
+    margin-left:3px;
+    width: 167px;
+height: 70px;
+    position: absolute;
+    background: #FFFFFF;
+border: 2px solid #DF1B7D;
+box-sizing: border-box;
+border-radius: 0px 3px 3px 0px;
+top: 64px;
+    left: 0;
+    font-style: normal;
+font-weight: normal;
+font-size: 11px;
+padding: 5px;
+}
+.schedule__content__image
+{
+    width:12px;
+    height: 12px;
+}
+.schedule__title 
+{
+  font-family: Jost;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 26px;
+text-align: center;
+}
+.special
+{
+  margin-top: -30px;
+}
+.dot 
+{
+    width: 11px;
+    height: 11px;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+.coaches2
+{
+  display: flex;
+  justify-content: center;
+}
+.coach 
+{
+  align-items: center;
+
+  display: flex;
+  margin-right: 30px;
+  margin-left: 10px;
+}
+
